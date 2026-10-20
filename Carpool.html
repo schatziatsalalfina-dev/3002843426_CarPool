@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CarPoolU</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    h1 {
+    color: #0056b3;
+    text-align: center;
+    }
+
+    .card {
+    background: white;
+      padding: 15px;
+      margin: 10px auto;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .badge {
+      color: green;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background-color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CarPoolU</h1>
+
+  <!-- Ride 1: Available -->
+  <div class="card">
+    <h3>Anggrek Campus (08:00 AM)</h3>
+    <p>Driver: Alex <span class="badge">[Verified]</span></p>
+    <p>Seats Left: 2</p>
+    <button onclick="alert('Seat request sent!')">Request Seat</button>
+  </div>
+
+  <!-- Ride 2: Full -->
+  <div class="card">
+    <h3>Syahdan Campus (08:15 AM)</h3>
+    <p>Driver: Sarah <span class="badge">[Verified]</span></p>
+    <p>Seats Left: 0 (Full)</p>
+    <button disabled>Ride Full</button>
+  </div>
+
+</body>
+</html>
